@@ -7,6 +7,7 @@ References:
 
 ## Directory Description
 This directory contains python scripts used for the processing of a csv file (Spotify - All Time Top 2000s Mega Dataset), unit testing of the processing functionalities, and the packaging of the script into a command line tool. 
+The main.py script return displays information about the dataset such as the number of null value per column, the avg, mean, and median bpm per genre
 List of Python scripts included: 
 src:
    __init__.py
