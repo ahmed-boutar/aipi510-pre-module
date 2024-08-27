@@ -1,6 +1,6 @@
 # AIPI 510: Data Sourcing & Analytics (Fall 2024)
 
-This directory was cloned from the accompanying GitHub to the Fall 2024 section of AIPI 510, taught by Dr. Brinnae Bent. 
+This directory was cloned from the accompanying GitHub to the Fall 2024 section of AIPI 510, taught by Dr. Brinnae Bent.
 References: 
 1 - Dataset Source: https://www.kaggle.com/datasets/iamsumat/spotify-top-2000s-mega-dataset
 
@@ -18,11 +18,12 @@ tests
 setup.py
 
 ## How to run
-1) Navigate to the directory where the setup.py is 
-2) Run: source venv/bin/activate
-3) Run: pip install --upgrade setuptools
-4) Run: pip install -e .
-5) Run: premodule
-6) To run the testing module use: python -m unittest tests.test_main OR python -m unittest discover -s tests
+NOTE: Python3.11 is needed to install the dependencies specified in the requirements.txt file, cloned from the AIPI510 classroom repo. Using Python3.12 will cause one of these errors (no module "disutils" found OR module pgkutil has no attribute ImpImporter.
+1) Navigate to the directory where the setup.py is
+2) Run: python3 -m venv venv OR python -m venv venv
+3) Run: source venv/bin/activate
+5) Run: pip install -e .
+6) Run: premodule
+7) To run the testing module use: python -m unittest tests.test_main OR python -m unittest discover -s tests
 
 
