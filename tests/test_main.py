@@ -13,6 +13,7 @@ class TestProcessingCSV(unittest.TestCase):
         self.test_data = pd.read_csv("data/Spotify-2000.csv")
     
     def test_load_dataset(self):
+        """Testing the function to load the dataset"""
         df = load_dataset("data/Spotify-2000.csv")
         self.assertEqual(len(df), 1994)
         column_names = get_columns(self.test_data)
@@ -24,6 +25,7 @@ class TestProcessingCSV(unittest.TestCase):
         self.assertEqual(dataset_shape, self.test_data.shape)
     
     def test_get_null_by_column(self):
+        """Testing if there any null values in any column"""
         df_not_null = get_null_by_column(self.test_data)
         self.assertTrue((df_not_null[1] == 0).all())
     
