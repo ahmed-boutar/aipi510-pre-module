@@ -20,8 +20,9 @@ setup.py
 ## How to run
 1) Navigate to the directory where the setup.py is 
 2) Run: source venv/bin/activate
-3) Run: pip install -e .
-4) Run: premodule
-5) To run the testing module use: python -m unittest tests.test_main OR python -m unittest discover -s tests
+3) Run: pip install --upgrade setuptools
+4) Run: pip install -e .
+5) Run: premodule
+6) To run the testing module use: python -m unittest tests.test_main OR python -m unittest discover -s tests
 
 
