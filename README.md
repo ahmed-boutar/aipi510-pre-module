@@ -22,7 +22,7 @@ NOTE: Python3.11 is needed to install the dependencies specified in the requirem
 1) Navigate to the directory where the setup.py is
 2) Run: python3 -m venv venv OR python -m venv venv
 3) Run: source venv/bin/activate
-5) Run: pip install -e .
+5) Run: pip install -e .  (NOTE: The . is part of the command)
 6) Run: premodule
 7) To run the testing module use: python -m unittest tests.test_main OR python -m unittest discover -s tests
 
